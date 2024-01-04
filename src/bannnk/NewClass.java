@@ -24,7 +24,7 @@ class Account {
         this.accountHolderName = accountHolderName;
         this.balance = 0.0;
         this.loanAmount = 0.0;
-        Bankname = "ECO Bank";
+        Bankname = "UNITED BANK OF AFRICA UBA";
     }
 
     public void deposit(double amount) {
