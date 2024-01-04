@@ -39,12 +39,12 @@ public class Bannnk {
 
             switch (choice) {
                 case 1:
-                    System.out.print("Enter deposit amount: $");
+                    System.out.print("Enter the amount you want to deposit: $");
                     double depositAmount = scanner.nextDouble();
                     account.deposit(depositAmount);
                     break;
                 case 2:
-                    System.out.print("Enter withdrawal amount: $");
+                    System.out.print("Enter the amount you want to withdraw: $");
                     double withdrawAmount = scanner.nextDouble();
                     account.withdraw(withdrawAmount);
                     break;
@@ -52,7 +52,7 @@ public class Bannnk {
                     account.displayAccountInfo();
                     break;
                 case 4:
-                    System.out.print("Enter loan amount: $");
+                    System.out.print("Enter the  loan amount: $");
                     double loanAmount = scanner.nextDouble();
                     account.giveLoan(loanAmount);
                     break;
