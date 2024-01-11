@@ -17,10 +17,10 @@ public class Bannnk {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter Account Password: ");
+        System.out.print("Please Enter Account Password: ");
         String accountNumber = scanner.nextLine();
 
-        System.out.print("Enter Account Holder Name: ");
+        System.out.print("Please Enter Account Holder Name: ");
         String accountHolderName = scanner.nextLine();
 
        Account account = new Account(accountNumber, accountHolderName);
@@ -29,7 +29,7 @@ public class Bannnk {
             System.out.println("\nMenu:");
             System.out.println("1. Deposit Amount");
             System.out.println("2. Withdraw Amount");
-            System.out.println("3. Display Account Info");
+            System.out.println("3. Display Account Information");
             System.out.println("4. Give Loan");
             System.out.println("5. Loan Payment");
             System.out.println("6. Exit");
@@ -39,12 +39,12 @@ public class Bannnk {
 
             switch (choice) {
                 case 1:
-                    System.out.print("Enter the amount you want to deposit: $");
+                    System.out.print("Plese enter the amount you want to deposit: $");
                     double depositAmount = scanner.nextDouble();
                     account.deposit(depositAmount);
                     break;
                 case 2:
-                    System.out.print("Enter the amount you want to withdraw: $");
+                    System.out.print("Please enter the amount you want to withdraw: $");
                     double withdrawAmount = scanner.nextDouble();
                     account.withdraw(withdrawAmount);
                     break;
@@ -52,12 +52,12 @@ public class Bannnk {
                     account.displayAccountInfo();
                     break;
                 case 4:
-                    System.out.print("Enter the  loan amount: $");
+                    System.out.print("Please enter the loan amount you want: $");
                     double loanAmount = scanner.nextDouble();
-                    account.giveLoan(loanAmount);
+                    account.giveLoan(loan amount);
                     break;
                 case 5:
-                    System.out.print("Enter loan payment amount: $");
+                    System.out.print("Please enter loan payment amount: $");
                     double loanPaymentAmount = scanner.nextDouble();
                     account.loanPayment(loanPaymentAmount);
                     break;
